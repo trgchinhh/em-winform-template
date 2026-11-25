@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YBgZFaWWiEk=",
+  "success": true,
+  "projectFilePath": "D:\\STU\\Năm 3\\Lập trình hướng đối tượng (TH)\\SingleTon\\TapLamSingleTon\\TapLamSingleTon\\TapLamSingleTon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\winforms.datavisualization\\1.10.2\\winforms.datavisualization.1.10.2.nupkg.sha512"
+  ],
+  "logs": []
+}
