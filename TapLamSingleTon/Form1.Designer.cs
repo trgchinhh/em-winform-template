@@ -50,13 +50,13 @@
 			rdbtn_vanphong = new RadioButton();
 			groupBox3 = new GroupBox();
 			btn_sapxep = new Button();
-			btn_thoat = new Button();
 			btn_them = new Button();
 			btn_xoa = new Button();
 			btn_thongke = new Button();
 			btn_sua = new Button();
 			btn_timkiem = new Button();
 			btn_loc = new Button();
+			btn_thoat = new Button();
 			btn_xemdanhsach = new Button();
 			btn_xemdanhsachdaxoa = new Button();
 			btn_khoiphuc = new Button();
@@ -260,7 +260,6 @@
 			// groupBox3
 			// 
 			groupBox3.Controls.Add(btn_sapxep);
-			groupBox3.Controls.Add(btn_thoat);
 			groupBox3.Controls.Add(btn_them);
 			groupBox3.Controls.Add(btn_xoa);
 			groupBox3.Controls.Add(btn_thongke);
@@ -269,7 +268,7 @@
 			groupBox3.Controls.Add(btn_loc);
 			groupBox3.Location = new Point(1190, 92);
 			groupBox3.Name = "groupBox3";
-			groupBox3.Size = new Size(138, 450);
+			groupBox3.Size = new Size(138, 400);
 			groupBox3.TabIndex = 14;
 			groupBox3.TabStop = false;
 			groupBox3.Text = "Các nút tính năng ";
@@ -283,16 +282,6 @@
 			btn_sapxep.Text = "Sắp xếp";
 			btn_sapxep.UseVisualStyleBackColor = true;
 			btn_sapxep.Click += btn_sapxep_Click;
-			// 
-			// btn_thoat
-			// 
-			btn_thoat.Location = new Point(23, 394);
-			btn_thoat.Name = "btn_thoat";
-			btn_thoat.Size = new Size(94, 35);
-			btn_thoat.TabIndex = 5;
-			btn_thoat.Text = "Thoát";
-			btn_thoat.UseVisualStyleBackColor = true;
-			btn_thoat.Click += btn_thoat_Click;
 			// 
 			// btn_them
 			// 
@@ -353,6 +342,17 @@
 			btn_loc.Text = "Lọc";
 			btn_loc.UseVisualStyleBackColor = true;
 			btn_loc.Click += btn_loc_Click;
+			// 
+			// btn_thoat
+			// 
+			btn_thoat.BackColor = Color.FromArgb(255, 128, 128);
+			btn_thoat.Location = new Point(1213, 725);
+			btn_thoat.Name = "btn_thoat";
+			btn_thoat.Size = new Size(94, 35);
+			btn_thoat.TabIndex = 5;
+			btn_thoat.Text = "Thoát";
+			btn_thoat.UseVisualStyleBackColor = false;
+			btn_thoat.Click += btn_thoat_Click;
 			// 
 			// btn_xemdanhsach
 			// 
@@ -586,6 +586,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1367, 782);
 			Controls.Add(groupBox8);
+			Controls.Add(btn_thoat);
 			Controls.Add(groupBox7);
 			Controls.Add(groupBox6);
 			Controls.Add(chart_thongke);

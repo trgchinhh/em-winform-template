@@ -72,6 +72,16 @@ namespace TapLamSingleTon
 			return "Ngược";
 		}
 
+		private void Xoagiatrisaukhithanhcong() {
+			txt_hoten.Text = "";
+			txt_maso.Text = "";
+			txt_luong.Text = "";
+			txt_diachi.Text = "";
+			dtp_ngaysinh.Value = DateTime.Now.Date;
+			rdbtn_nam.Checked = true;
+			rdbtn_vanphong.Checked = true;
+		}
+
 		private void Hienthidanhsach(Dictionary<string, NhanVien> danhsachnhanvien) {
 			chart_thongke.Visible = false;
 			dgv_danhsachnhanvien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -123,6 +133,7 @@ namespace TapLamSingleTon
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
 				);
+				Xoagiatrisaukhithanhcong();
 			}
 		}
 
@@ -164,6 +175,7 @@ namespace TapLamSingleTon
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
 				);
+				Xoagiatrisaukhithanhcong();
 			}
 			btn_xemdanhsachdaxoa.Text = $"Xem danh sách đã xóa ({quanlynhanvien.Laysoluongnhanvienbixoa()})";
 		}
@@ -224,6 +236,7 @@ namespace TapLamSingleTon
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
 				);
+				Xoagiatrisaukhithanhcong();
 			}
 			LuuVaNapFile.LuuFile(quanlynhanvien.Danhsachnhanvien, LuuVaNapFile.tenfile_danhsachnhanvien);
 		}
@@ -340,8 +353,8 @@ namespace TapLamSingleTon
 			if (loainhanvien == "Văn phòng") rdbtn_vanphong.Checked = true;
 			else if (loainhanvien == "Sản xuất") rdbtn_sanxuat.Checked = true;
 			else rdbtn_kinhdoanh.Checked = true;
-			txt_diachi.Text = dulieu.Cells[6].Value.ToString();
-			txt_luong.Text = dulieu.Cells[5].Value.ToString();
+			txt_diachi.Text = dulieu.Cells[5].Value.ToString();
+			txt_luong.Text = dulieu.Cells[6].Value.ToString();
 		}
 
 		private void Form1_Load(object sender, EventArgs e) {
